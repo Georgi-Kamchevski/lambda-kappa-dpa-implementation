@@ -27,6 +27,9 @@ This project demonstrates both the **Lambda Architecture** and the **Kappa Archi
 
 Data is ingested via **Apache Kafka**, persisted in **PostgreSQL**, and monitored with **Prometheus & Grafana**.
 
+![Dockerized Lambda and Kappa Architecture Implementation Diagram](/Implementation_Diagram_Lambda_Kappa_Architectures.jpg)
+*Diagram: Dockerized deployment of Lambda and Kappa architectures. Components are isolated via Docker Compose profiles with shared PostgreSQL and monitoring stack. Green = Lambda, Blue = Kappa, Black = Shared.*
+
 ---
 
 ## 🧱 Technologies Used
