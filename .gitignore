@@ -1,0 +1,4 @@
+# Ignore local volume and large data
+postgres-data/
+bank_transactions.csv
+bank_transactions_lite.csv
