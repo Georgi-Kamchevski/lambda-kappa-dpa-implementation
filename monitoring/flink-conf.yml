@@ -1,0 +1,28 @@
+# flink-conf.yaml
+
+# --- Core Settings ---
+jobmanager.rpc.address: flink-jobmanager
+
+# --- Prometheus Metrics Reporter ---
+metrics.reporter.prom.class: org.apache.flink.metrics.prometheus.PrometheusReporter
+metrics.reporter.prom.port: 9250
+
+# --- Expose Operator Latency Metrics ---
+metrics.job.task.operator.latency.histogram: true
+
+# --- Metric Scopes (make labels better for Prometheus) ---
+metrics.scope.jm: flink.jobmanager
+metrics.scope.tm: flink.taskmanager
+metrics.scope.job: flink.jobmanager.job
+metrics.scope.task: flink.taskmanager.job.task
+metrics.scope.operator: flink.taskmanager.job.task.operator
+
+# --- Optional: Add System Metrics (enabled by default usually) ---
+# (You can uncomment if you want explicit JVM memory metrics etc.)
+# metrics.system.jmx.enabled: true
+
+# --- Prometheus Reporter Settings (optional tuning) ---
+metrics.reporter.prom.interval: 10 SECONDS
+
+# --- Akka/Pekko Settings (for newer Flink with Pekko) ---
+# (no change needed unless you modify cluster behavior)

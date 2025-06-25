@@ -1,0 +1,10 @@
+apiVersion: 1
+
+providers:
+  - name: Kafka Dashboards
+    folder: Kafka
+    type: file
+    options:
+      path: /etc/grafana/provisioning/dashboards/json
+      disableDeletion: false
+      updateIntervalSeconds: 10

@@ -1,0 +1,17 @@
+{
+	"ulid": "01JW904PDPVMEQW9E44QZF7YZ4",
+	"minTime": 1748336333095,
+	"maxTime": 1748340000000,
+	"stats": {
+		"numSamples": 9869,
+		"numSeries": 8489,
+		"numChunks": 8489
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JW904PDPVMEQW9E44QZF7YZ4"
+		]
+	},
+	"version": 1
+}
