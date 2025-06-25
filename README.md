@@ -48,14 +48,23 @@ Data is ingested via **Apache Kafka**, persisted in **PostgreSQL**, and monitore
 ## 📁 Folder Structure
 .
 ├── custom-flink-libs/ # JARs required for Flink (JDBC, Kafka, JSON, Prometheus)
+
 ├── helper-scripts/ # Kafka producers, test scripts, data cleaners
+
 ├── kafka-data/ # Data & configurations related to Kafka
+
 ├── monitoring/ # Prometheus and Grafana dashboards
+
 ├── postgres-data/ # Volume directory for PostgreSQL
+
 ├── docker-compose.yml # Main stack definition (all services)
+
 ├── dockerfile.flink # Dockerfile for custom Flink image
+
 ├── *.py # PyFlink & Spark processing scripts
+
 ├── *.sql # SQL scripts to create database schemas
+
 
 ---
 
